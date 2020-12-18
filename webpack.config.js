@@ -9,7 +9,7 @@ module.exports = {
     filename: 'main.js'
   },
   resolve: {
-    extensions: ['.js',]
+    extensions: ['.js','.jsx']
   },
   module: {
     rules: [
@@ -44,7 +44,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.js?$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
