@@ -4,7 +4,7 @@ import './ChallengeCard.scss';
 
 const ChallengeCard = () => {
   return (
-    <h1>ChallengeCard</h1>
+    <h1>This is my card component</h1>
   );
 };
 
