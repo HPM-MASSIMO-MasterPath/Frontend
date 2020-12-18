@@ -1,0 +1,45 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HPM-MASSIMO-MasterPath/Frontend.git"
+  },
+  "keywords": [
+    "MasterPath"
+  ],
+  "author": "deymerh <deymerh@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^4.5.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^1.3.2",
+    "mini-css-extract-plugin": "^1.3.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "url-loader": "^4.1.1",
+    "style-loader": "^2.0.0"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-hot-loader": "^4.13.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/HPM-MASSIMO-MasterPath/Frontend/issues"
+  },
+  "homepage": "https://github.com/HPM-MASSIMO-MasterPath/Frontend#readme"
+}
