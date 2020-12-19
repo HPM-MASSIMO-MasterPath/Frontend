@@ -12,7 +12,7 @@ const myChallengeCard = props => {
         <p>{name}</p>
       </div>
       <div className='myChallenges__card-button'>
-        <Link to={`/description/${id}`}>
+        <Link to={`/challengeDescription/${id}`}>
           <button>GO</button>
         </Link>
       </div>
