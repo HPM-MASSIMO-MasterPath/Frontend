@@ -1,0 +1,16 @@
+.sidebar{
+  &__item{
+    height: 50px;
+  }
+  padding: 10px 12px;
+  background-color: #24385b;
+  h1{
+    color: #fff;
+    font-size: 25px;
+    padding: 15px 0px;
+  }
+  p{
+    color: #fff;
+    font-size: 16px;
+  }
+}

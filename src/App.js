@@ -1,11 +1,19 @@
 import React from 'react';
-import Header from './components/Header/Header';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import HomePage from './pages/home/HomePage';
 
 import './assets/styles/components/App.scss';
+import Layout from './layout/Layout';
 
 const App = () => {
   return (
-    <Header />
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+        </Switch>
+      </Layout>
+    </BrowserRouter>
   );
 };
 
