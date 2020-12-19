@@ -26,7 +26,7 @@ const ChallengeDescription = () => {
     };
 
     getDescription();
-  });
+  }, []);
 
   return (
     <>

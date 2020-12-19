@@ -25,37 +25,38 @@ const ChallengeLayout = () => {
 
   return (
     <>
-      <h1 className="title__section"><span>CHALLENGES</span></h1>
+      <h1 className='title__section'>
+        <span>CHALLENGES</span>
+      </h1>
       <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
-          {challenges.map(challenge => (
-            <Link to={`challengeDescription/${challenge.id}`} key={challenge.id}>
-              <ChallengeCard  {...challenge} />
+          {challenges.map((challenge, index) => (
+            <Link to={`challengeDescription/${challenge.id}`} key={index}>
+              <ChallengeCard {...challenge} />
             </Link>
           ))}
         </ChallengeCarousel>
       </ChallengeCategories>
       <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
-          {challenges.map(challenge => (
-            <Link to={`challengeDescription/${challenge.id}`} key={challenge.id}>
-              <ChallengeCard  {...challenge} />
+          {challenges.map((challenge, index) => (
+            <Link to={`challengeDescription/${challenge.id}`} key={index}>
+              <ChallengeCard {...challenge} />
             </Link>
           ))}
         </ChallengeCarousel>
       </ChallengeCategories>
       <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
-          {challenges.map(challenge => (
-            <Link to={`challengeDescription/${challenge.id}`} key={challenge.id}>
-              <ChallengeCard  {...challenge} />
+          {challenges.map((challenge, index) => (
+            <Link to={`challengeDescription/${challenge.id}`} key={index}>
+              <ChallengeCard {...challenge} />
             </Link>
           ))}
         </ChallengeCarousel>
       </ChallengeCategories>
     </>
   );
-
   /* 
       <div className="card">
         {

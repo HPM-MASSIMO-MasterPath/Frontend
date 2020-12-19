@@ -1,0 +1,59 @@
+@import '../../assets/styles/components/Global.scss';
+
+.myChallengesContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.myChallenges__title {
+  width: 100%;
+  height: auto;
+}
+
+.myChallenges__title h2 {
+  margin: 20px;
+  font-size: 36px;
+  line-height: 43.2px;
+  font-weight: 700;
+  color: white;
+}
+
+.myChallenges__card {
+  display: flex;
+  width: 80%;
+  height: 87px;
+  padding: 0 25px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $side-card-color;
+  border-radius: 8px;
+}
+
+.myChallenges__card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myChallenges__card-text img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.myChallenges__card-text p {
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 400;
+}
+
+.myChallenges__card-button button {
+  width: 60px;
+  height: 30px;
+  background-color: $secondary-color;
+  color: white;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}

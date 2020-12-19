@@ -1,0 +1,12 @@
+.myChallenges {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 25vw 75vw;
+  grid-template-areas: 'myChallenges__sidebar myChallenges__challenges';
+}
+.myChallenges__sidebar {
+  grid-area: 'myChallenges__sidebar';
+}
+.myChallenges__description {
+  grid-area: 'myChallenges__challenges';
+}

@@ -2,12 +2,11 @@ import React from 'react';
 import Layout from './layout/Layout.jsx';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from './pages/home/HomePage';
-// import Layout from './layout/Layout.jsx';
-import ChallengeDescription from './components/ChallengeDescription/ChallengeDescription.jsx';
+import ChallengePage from './pages/challenge/ChallengePage.jsx';
+import MyChallengesPage from './pages/myChallenges/MyChallengesPage.jsx';
 
 import './assets/styles/components/App.scss';
 import './assets/styles/components/Global.scss';
-// import Layout from './layout/Layout';
 
 const App = () => {
   return (
@@ -15,11 +14,8 @@ const App = () => {
       <Layout>
         <Switch>
           <Route exact path='/' component={HomePage} />
-          <Route
-            exact
-            path='/challengeDescription/:id'
-            component={ChallengeDescription}
-          />
+          <Route exact path='/challengeDescription/:id' component={ChallengePage} />
+          <Route exact path='/myChallenges' component={MyChallengesPage} />
         </Switch>
       </Layout>
     </BrowserRouter>
