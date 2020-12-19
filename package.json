@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "start": "webpack --mode production"
+    "start": "npx serve ./dist -s"
   },
   "repository": {
     "type": "git",
@@ -43,7 +43,8 @@
     "react-hot-loader": "^4.13.0",
     "react-icons": "^4.1.0",
     "react-jsx": "^1.0.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "serve": "^11.3.2"
   },
   "bugs": {
     "url": "https://github.com/HPM-MASSIMO-MasterPath/Frontend/issues"
