@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from './layout/Layout.jsx'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from './pages/home/HomePage';
 
