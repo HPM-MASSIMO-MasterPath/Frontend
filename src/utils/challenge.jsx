@@ -1,0 +1,1 @@
+export const API1 = "https://masterpath.herokuapp.com/challenge/id";
