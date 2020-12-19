@@ -1,0 +1,37 @@
+.modal{
+  label{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 35rem;
+    padding: 20px;
+  }
+  input{
+    height: 28px;
+    background-color: #0C1633;
+    border-radius: 5px;
+    color: #4C4C4C;
+  }
+  div{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+}
+.modal__button-send{
+  background-color: #98CA3F;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+.modal__button-cancel{
+  background-color: #FF7475;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
