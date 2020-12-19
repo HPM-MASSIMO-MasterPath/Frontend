@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { API } from '../../utils/config.jsx';
 
 import './ChallengeDescription.scss';
 
 const ChallengeDescription = () => {
+  const [description, setDescription] = useState([]);
+  let { id } = useParams();
+  // const id = 6;
+
+  useEffect(() => {
+    const getDescription = () => {
+      fetch(`${API}challenge/one/${id}`)
+        .then(res => res.json())
+        .then(res => {
+          const { challenges } = res;
+          setDescription(challenges);
+        });
+    };
+
+    getDescription();
+  });
+
   return (
     <div className='description'>
       <div className='description__title'>
@@ -12,21 +31,10 @@ const ChallengeDescription = () => {
       </div>
       <div className='description__card'>
         <div className='description__card-text'>
-          <h3>Basic easy challenge title</h3>
-          <h4>About the challenge</h4>
+          <h3>{description.name}</h3>
+          <h4>{description.difficulty}</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nam
-            assumenda reiciendis laudantium veniam magnam. Autem, voluptates
-            dolor sapiente, consectetur nisi, ipsa nulla libero ut minima
-            doloribus at dolorum incidunt. <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nam
-            assumenda reiciendis laudantium veniam magnam. Autem, voluptates
-            dolor sapiente, consectetur nisi, ipsa nulla libero ut minima
-            doloribus at dolorum incidunt. dolorum incidunt. <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nam
-            assumenda reiciendis laudantium veniam magnam. Autem, voluptates
-            dolor sapiente, consectetur nisi, ipsa nulla libero ut minima
-            doloribus at dolorum incidunt.
+            {description.description} <br /> OUTPUT: <br /> {description.output}
           </p>
         </div>
         <div className='description__card-button'>
