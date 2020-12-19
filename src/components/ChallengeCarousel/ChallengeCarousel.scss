@@ -1,0 +1,16 @@
+
+.carousel {
+  //width: 1000px;
+  padding-left: 30px;
+  padding-top: 40px;
+  overflow-y: hidden;
+  
+}
+.carousel__container {
+  width: 20em;
+  display: flex;
+  //grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 10px;
+  //margin: 60px 0px;
+  //padding-bottom: 10px;
+}
