@@ -27,7 +27,7 @@
 
 .description__card {
   width: 1084px;
-  height: 539px;
+  min-height: 539px;
   padding: 30px;
   background-color: $side-card-color;
   border-radius: 8px;

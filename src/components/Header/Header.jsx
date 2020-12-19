@@ -1,19 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LogoPlatzimaster from '../../assets/images/logo-platzimaster.png';
 
 import './Header.scss';
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="header__logo">
-        <figure>
-          <img src={LogoPlatzimaster} alt={LogoPlatzimaster} />
-        </figure>
+    <header className='header'>
+      <div className='header__logo'>
+        <Link to='/'>
+          <figure>
+            <img src={LogoPlatzimaster} alt={LogoPlatzimaster} />
+          </figure>
+        </Link>
       </div>
-      <div className="header__right">
+      <div className='header__right'>
         <figure>
-          <div className="header__photo"></div>
+          <div className='header__photo'></div>
           <p>Name</p>
         </figure>
       </div>

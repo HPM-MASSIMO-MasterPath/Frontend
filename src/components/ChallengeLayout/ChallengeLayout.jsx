@@ -27,7 +27,7 @@ const ChallengeLayout = () => {
       <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
           {challenges.map(challenge => (
-            <Link to={`challengeDescription/${challenge.id}`}>
+            <Link to={`description/${challenge.id}`}>
               <ChallengeCard key={challenge.id} {...challenge} />
             </Link>
           ))}
@@ -36,7 +36,7 @@ const ChallengeLayout = () => {
       <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
           {challenges.map(challenge => (
-            <Link to={`challengeDescription/${challenge.id}`}>
+            <Link to={`description/${challenge.id}`}>
               <ChallengeCard key={challenge.id} {...challenge} />
             </Link>
           ))}
@@ -45,7 +45,7 @@ const ChallengeLayout = () => {
       <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
           {challenges.map(challenge => (
-            <Link to={`challengeDescription/${challenge.id}`}>
+            <Link to={`description/${challenge.id}`}>
               <ChallengeCard key={challenge.id} {...challenge} />
             </Link>
           ))}

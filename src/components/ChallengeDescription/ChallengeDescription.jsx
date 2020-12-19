@@ -41,9 +41,9 @@ const ChallengeDescription = () => {
           <button>SOLVE CHALLENGE</button>
         </div>
       </div>
-      <div className='description__send'>
+      {/* <div className='description__send'>
         <input type='text' placeholder='Your Github repo Link' />
-      </div>
+      </div> */}
     </div>
   );
 };
