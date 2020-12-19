@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from './pages/home/HomePage';
 
 import './assets/styles/components/App.scss';
-import Layout from './layout/Layout';
+import './assets/styles/components/Global.scss';
 
 const App = () => {
   return (
