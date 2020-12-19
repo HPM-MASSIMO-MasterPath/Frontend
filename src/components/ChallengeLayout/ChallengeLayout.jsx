@@ -6,6 +6,7 @@ import ChallengeCategories from '../ChallengeCategories/ChallengeCategories';
 import ChallengeCarousel from '../ChallengeCarousel/ChallengeCarousel';
 import ChallengeCard from '../ChallengeCard/ChallengeCard';
 import { Link } from 'react-router-dom';
+import './ChallengeLayout.scss';
 
 const ChallengeLayout = () => {
   const [challenges, setChallenge] = useState([]);
@@ -21,14 +22,15 @@ const ChallengeLayout = () => {
     };
     getChallenges();
   }, []);
-  console.log(challenges);
+
   return (
     <>
+      <h1 className="title__section"><span>CHALLENGES</span></h1>
       <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
           {challenges.map(challenge => (
-            <Link to={`challengeDescription/${challenge.id}`}>
-              <ChallengeCard key={challenge.id} {...challenge} />
+            <Link to={`challengeDescription/${challenge.id}`} key={challenge.id}>
+              <ChallengeCard  {...challenge} />
             </Link>
           ))}
         </ChallengeCarousel>
@@ -36,8 +38,8 @@ const ChallengeLayout = () => {
       <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
           {challenges.map(challenge => (
-            <Link to={`challengeDescription/${challenge.id}`}>
-              <ChallengeCard key={challenge.id} {...challenge} />
+            <Link to={`challengeDescription/${challenge.id}`} key={challenge.id}>
+              <ChallengeCard  {...challenge} />
             </Link>
           ))}
         </ChallengeCarousel>
@@ -45,8 +47,8 @@ const ChallengeLayout = () => {
       <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
           {challenges.map(challenge => (
-            <Link to={`challengeDescription/${challenge.id}`}>
-              <ChallengeCard key={challenge.id} {...challenge} />
+            <Link to={`challengeDescription/${challenge.id}`} key={challenge.id}>
+              <ChallengeCard  {...challenge} />
             </Link>
           ))}
         </ChallengeCarousel>

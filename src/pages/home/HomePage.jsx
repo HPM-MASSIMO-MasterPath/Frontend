@@ -1,6 +1,5 @@
 import React from 'react'
 import ChallengeLayout from '../../components/ChallengeLayout/ChallengeLayout';
-import Header from '../../components/Header/Header';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import './HomePage.scss';
 

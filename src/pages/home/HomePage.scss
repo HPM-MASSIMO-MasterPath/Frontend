@@ -1,12 +1,9 @@
 .homepage{
+  width: 100%;
   display: grid;
-  gap: 3rem;
-  grid-template-columns: 25vw 75vw;
-  grid-template-areas: 'homepage__sidebar homepage__challenges';
-}
-.homepage__sidebar{
-  grid-area: "homepage__sidebar";
+  grid-template-columns: 25% 1fr;
+  margin: 30px;
 }
 .homepage__challenges{
-  grid-area: "homepage__challenges";
+  padding: 0px 30px;
 }

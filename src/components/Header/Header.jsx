@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LogoPlatzimaster from '../../assets/images/logo-platzimaster.png';
 
 import './Header.scss';
@@ -8,7 +9,9 @@ const Header = () => {
     <header className="header">
       <div className="header__logo">
         <figure>
-          <img src={LogoPlatzimaster} alt={LogoPlatzimaster} />
+          <Link to='/'>
+            <img src={LogoPlatzimaster} alt={LogoPlatzimaster} />
+          </Link>
         </figure>
       </div>
       <div className="header__right">
