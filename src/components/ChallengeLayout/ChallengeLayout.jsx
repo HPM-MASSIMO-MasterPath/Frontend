@@ -2,10 +2,9 @@ import React from 'react';
 import { API } from '../../utils/config';
 import { useEffect, useState } from 'react';
 
-
 import ChallengeCategories from '../ChallengeCategories/ChallengeCategories';
 import ChallengeCarousel from '../ChallengeCarousel/ChallengeCarousel';
-import ChallengeCard from '../ChallengeCard/ChallengeCard'
+import ChallengeCard from '../ChallengeCard/ChallengeCard';
 import { Link } from 'react-router-dom';
 
 const ChallengeLayout = () => {
@@ -17,50 +16,43 @@ const ChallengeLayout = () => {
         .then(res => res.json())
         .then(res => {
           const { challenges } = res;
-          setChallenge(challenges)
-        })
-    }
-    getChallenges()
-  }, [])
-  console.log(challenges)
+          setChallenge(challenges);
+        });
+    };
+    getChallenges();
+  }, []);
+  console.log(challenges);
   return (
     <>
-      <ChallengeCategories title="Easy">
+      <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
-          {challenges.map(challenge =>
+          {challenges.map(challenge => (
             <Link to={`challengeDescription/${challenge.id}`}>
-              <ChallengeCard
-                key={challenge.id}
-                {...challenge}
-              />
+              <ChallengeCard key={challenge.id} {...challenge} />
             </Link>
-          )}
+          ))}
         </ChallengeCarousel>
       </ChallengeCategories>
-      <ChallengeCategories title="Easy">
+      <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
-          {challenges.map(challenge =>
-            <ChallengeCard
-              key={challenge.id}
-              {...challenge}
-            />
-          )}
+          {challenges.map(challenge => (
+            <Link to={`challengeDescription/${challenge.id}`}>
+              <ChallengeCard key={challenge.id} {...challenge} />
+            </Link>
+          ))}
         </ChallengeCarousel>
       </ChallengeCategories>
-      <ChallengeCategories title="Easy">
+      <ChallengeCategories title='Easy'>
         <ChallengeCarousel>
-          {challenges.map(challenge =>
+          {challenges.map(challenge => (
             <Link to={`challengeDescription/${challenge.id}`}>
-              <ChallengeCard
-                key={challenge.id}
-                {...challenge}
-              />
+              <ChallengeCard key={challenge.id} {...challenge} />
             </Link>
-          )}
+          ))}
         </ChallengeCarousel>
       </ChallengeCategories>
     </>
-  )
+  );
 
   /* 
       <div className="card">
@@ -76,7 +68,6 @@ const ChallengeLayout = () => {
         })
       }
       </div> */
-
-}
+};
 
 export default ChallengeLayout;
