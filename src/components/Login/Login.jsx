@@ -23,7 +23,7 @@ const Login = () => {
             </div>
             <div className="login__form--group">
               <label htmlFor="inputPassword">Password</label>
-              <input type="text" placeholder="Enter your password" />
+              <input type="password" placeholder="Enter your password" />
             </div>
             <div className="login__form--group">
             <button type="submit">Sign in</button>
