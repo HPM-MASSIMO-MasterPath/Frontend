@@ -26,9 +26,9 @@ const Sidebar = () => {
       <div className="sidebar">
         <h1>My learning path </h1>
         {
-          courses?.map(course => {
+          courses?.map((course, index) => {
             return (
-              <div className="sidebar__item">
+              <div className="sidebar__item" key={index}>
                 <p>{course.name}</p>
               </div>
             )
