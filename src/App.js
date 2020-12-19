@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './assets/styles/components/App.scss';
+import './assets/styles/components/Global.scss';
 
 const App = () => {
   return (
