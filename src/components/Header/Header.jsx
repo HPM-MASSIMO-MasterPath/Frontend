@@ -6,8 +6,8 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="header__logo">
+    <header className='header'>
+      <div className='header__logo'>
         <figure>
           <Link to='/'>
             <img src={LogoPlatzimaster} alt={LogoPlatzimaster} />
@@ -18,6 +18,9 @@ const Header = () => {
         <div className='header__myChallenges'>
           <Link to='/myChallenges'>
             <h3>My Challenges</h3>
+          </Link>
+          <Link to='/statistics'>
+            <h3>Statistics</h3>
           </Link>
         </div>
         <figure>

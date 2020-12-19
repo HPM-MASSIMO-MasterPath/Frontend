@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from './layout/Layout.jsx';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from './pages/home/HomePage';
+import Login from './components/Login/Login.jsx';
 import ChallengePage from './pages/challenge/ChallengePage.jsx';
 import MyChallengesPage from './pages/myChallenges/MyChallengesPage.jsx';
 import StatisticsPage from './pages/statistics/StatisticsPage.jsx';
@@ -14,7 +15,8 @@ const App = () => {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path='/' component={HomePage} />
+          <Route exact path='/' component={Login} />
+          <Route exact path='/home' component={HomePage} />
           <Route
             exact
             path='/challengeDescription/:id'
