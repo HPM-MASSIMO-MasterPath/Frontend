@@ -20,7 +20,7 @@ const ChallengeDescription = () => {
     };
 
     getDescription();
-  });
+  }, []);
 
   return (
     <div className='description'>
@@ -34,16 +34,17 @@ const ChallengeDescription = () => {
           <h3>{description.name}</h3>
           <h4>{description.difficulty}</h4>
           <p>
-            {description.description} <br /> OUTPUT: <br /> {description.output}
+            {description.description} <br /> OUTPUT: <br /> <br />{' '}
+            {description.output}
           </p>
         </div>
         <div className='description__card-button'>
           <button>SOLVE CHALLENGE</button>
         </div>
       </div>
-      <div className='description__send'>
+      {/* <div className='description__send'>
         <input type='text' placeholder='Your Github repo Link' />
-      </div>
+      </div> */}
     </div>
   );
 };
