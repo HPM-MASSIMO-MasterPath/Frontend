@@ -1,4 +1,5 @@
 import React from 'react'
+import ChallengeLayout from '../../components/ChallengeLayout/ChallengeLayout';
 import Header from '../../components/Header/Header';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import './HomePage.scss';
@@ -6,7 +7,12 @@ import './HomePage.scss';
 const HomePage = () => {
   return (
     <div className="homepage">
-      <Sidebar />
+      <div className="homepage__sidebar">
+        <Sidebar />
+      </div>
+      <div className="homepage__challenges">
+        <ChallengeLayout />
+      </div>
     </div>
   )
 }
