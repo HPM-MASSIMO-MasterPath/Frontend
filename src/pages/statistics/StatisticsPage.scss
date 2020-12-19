@@ -1,0 +1,19 @@
+.statistics {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 25vw 75vw;
+  grid-template-areas: 'myChallenges__sidebar myChallenges__challenges';
+}
+.statistics__sidebar {
+  grid-area: 'myChallenges__sidebar';
+}
+.statistics__info {
+  grid-area: 'myChallenges__challenges';
+}
+
+.statistics__info iframe {
+  margin: 20px;
+  width: 70vw;
+  height: 85vh;
+  border-radius: 8px;
+}
